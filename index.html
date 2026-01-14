@@ -170,9 +170,14 @@
         <h2>Technical Details</h2>
         <p>Our probes may appear in your logs as:</p>
         <ul>
-            <li>SIP OPTIONS requests to port 5060/5061</li>
-            <li>User-Agent: <code>VoIP-Research/1.0</code></li>
-            <li>From header referencing this domain</li>
+            <li><strong>SIP:</strong> OPTIONS requests to port 5060 (UDP/TCP) and 5061 (TLS)</li>
+            <li><strong>STUN/TURN:</strong> Binding requests to port 3478</li>
+            <li><strong>H.323:</strong> Setup messages to port 1720</li>
+        </ul>
+        <p style="margin-top: 15px;">Identifiers in our requests:</p>
+        <ul>
+            <li>User-Agent: <code>VoIP-Research/1.0 (+https://vidurgupta01.github.io/voip-scan-webpage/)</code></li>
+            <li>SIP From header: <code>sip:scanner@vidurgupta01.github.io</code></li>
         </ul>
     </div>
 
