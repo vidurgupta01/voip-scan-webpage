@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoIP Infrastructure Research Study</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: #f9f9f9;
+        }
+        .header {
+            background: #8C1515;
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+        .header p {
+            opacity: 0.9;
+        }
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .card h2 {
+            color: #8C1515;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .highlight {
+            background: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .warning {
+            background: #fff3e0;
+            border-left: 4px solid #ff9800;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .contact {
+            background: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        a {
+            color: #8C1515;
+        }
+        code {
+            background: #f5f5f5;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 0.9em;
+        }
+        .footer {
+            text-align: center;
+            color: #666;
+            margin-top: 30px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>VoIP/RTC Infrastructure Measurement Study</h1>
+        <p>Academic research on Internet-facing real-time communication infrastructure</p>
+    </div>
+
+    <div class="card">
+        <h2>What is this?</h2>
+        <p>If you're seeing traffic from our scanning infrastructure, this page explains what we're doing and why.</p>
+        <p style="margin-top: 10px;">We are conducting an academic research study measuring the deployment and security posture of Voice over IP (VoIP) and real-time communication (RTC) infrastructure on the public Internet.</p>
+    </div>
+
+    <div class="card">
+        <h2>What we're doing</h2>
+        <ul>
+            <li>Sending <strong>SIP OPTIONS</strong> requests to discover VoIP endpoints</li>
+            <li>Collecting response headers to understand deployment patterns</li>
+            <li>Analyzing encryption adoption (SIP-TLS, SRTP)</li>
+            <li>Mapping the global RTC infrastructure landscape</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>This is NOT an attack</h2>
+        <div class="highlight">
+            <strong>Our scanning is passive and non-intrusive:</strong>
+            <ul style="margin-top: 10px;">
+                <li>No authentication attempts or credential testing</li>
+                <li>No calls placed or media sessions established</li>
+                <li>No exploitation of vulnerabilities</li>
+                <li>No collection of personally identifiable information</li>
+                <li>Only metadata (IP, port, banner) is recorded</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Research Purpose</h2>
+        <p>This study aims to:</p>
+        <ul>
+            <li>Create the first comprehensive census of Internet-facing RTC infrastructure</li>
+            <li>Understand security posture of critical voice infrastructure</li>
+            <li>Identify encryption adoption rates</li>
+            <li>Inform the security community about potential risks</li>
+        </ul>
+        <p style="margin-top: 15px;">Findings will be published in an academic paper and any critical vulnerabilities will be responsibly disclosed.</p>
+    </div>
+
+    <div class="card">
+        <h2>Opt-Out Request</h2>
+        <div class="contact">
+            <p><strong>To exclude your network from our scans:</strong></p>
+            <p style="margin-top: 10px;">Email: <a href="mailto:vidur@stanford.edu">vidur@stanford.edu</a></p>
+            <p style="margin-top: 5px;">Please include the IP range (CIDR notation) you'd like excluded.</p>
+        </div>
+        <p style="margin-top: 10px;">We honor all opt-out requests promptly and maintain an exclusion list.</p>
+    </div>
+
+    <div class="card">
+        <h2>Researcher Information</h2>
+        <p><strong>Vidur Gupta</strong></p>
+        <p>M.S. Student, Electrical Engineering</p>
+        <p>Stanford University</p>
+        <p style="margin-top: 15px;">
+            <a href="https://github.com/vidurgupta01">GitHub</a>
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Technical Details</h2>
+        <p>Our probes may appear in your logs as:</p>
+        <ul>
+            <li>SIP OPTIONS requests to port 5060/5061</li>
+            <li>User-Agent: <code>VoIP-Research/1.0</code></li>
+            <li>From header referencing this domain</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <p>This research follows ethical Internet measurement practices.</p>
+        <p style="margin-top: 5px;">Last updated: January 2025</p>
+    </div>
+</body>
+</html>
